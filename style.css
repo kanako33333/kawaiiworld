@@ -1,0 +1,139 @@
+body{
+    margin: 0;
+    overflow: hidden;
+}
+
+.haikei{
+    background: url(img/haikei.jpg);
+    width: 500%;
+    height: 100vh;
+    position: relative;
+    z-index: -2;
+}
+
+.describe{
+    position: absolute;
+    top: 10vh;
+    left: 10vw;
+    font-size: 5vw;
+	line-height: 1.5;
+	font-weight:bold;
+	color: #03A9F4;
+	text-shadow: 
+		0.04em 0.02em 0 #B0BEC5, 
+		0.08em 0.05em 0 rgba(0, 0, 0, 0.6);
+}
+
+.kobito1 img{
+    width: 20vw;
+    position: absolute;
+    bottom: 0;
+    left: 5vw;
+}
+.kobito2 img{
+    width: 20vw;
+    position: absolute;
+    bottom: 35vh;
+    left: 15vw;
+    opacity: 0;
+    animation: appearance1 3s ease 7s 1 normal forwards running;
+}
+
+.piero img{
+    width: 8vw;
+    position: absolute;
+    bottom: 25vh;
+    left: 60vw;
+    opacity: 0;
+    animation: appearance1 3s ease 10s 1 normal forwards running;
+}
+
+.cat img{
+    width: 8vw;
+    position: absolute;
+    bottom: 5vh;
+    left: 45vw;
+    opacity: 0;
+    animation: appearance1 3s ease 13s 1 normal forwards running;
+}
+.kids img{
+    width: 20vw;
+    position: absolute;
+    bottom: 15vh;
+    left: 28vw;
+    opacity: 0;
+    animation: appearance1 3s ease 16s 1 normal forwards running;
+}
+.angel img{
+    width: 15vw;
+    position: absolute;
+    bottom: 40vh;
+    left: 45vw;
+    opacity: 0;
+    animation: appearance1 3s ease 19s 1 normal forwards running;
+}
+.flower img{
+    width: 25vw;
+    position: absolute;
+    bottom: 40vh;
+    left: 70vw;
+    opacity: 0;
+    animation: appearance1 3s ease 22s 1 normal forwards running;
+}
+.onpu img{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    bottom: 0vh;
+    left: 0vw;
+    opacity: 0;
+    animation: appearance1 3s ease 25s 1 normal forwards running;
+    z-index: -1;
+}
+.niceday{
+    top: 10vh;
+    left: 10vw;
+    font-size: 5vw;
+    font-family: cursive;
+    font-weight: bold;
+    text-shadow: 5px 0 10px #fff;
+    position: absolute;
+    opacity: 0;
+    animation: appearance1 3s ease 30s 1 normal forwards running;
+}
+
+@keyframes moving{
+    100%{
+        transform: translateX(-3000px);
+    }
+}
+
+@keyframes walking{
+    100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(15px);
+    }
+    0%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes appearance1 {
+    0% {
+    opacity: 0;
+    }
+    100% {
+    opacity: 1;
+    }
+}
+
+.moving{
+    animation: moving 10s linear infinite;
+}
+
+.walking{
+    animation: walking 1s linear infinite;
+}
+
